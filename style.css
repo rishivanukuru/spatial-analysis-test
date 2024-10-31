@@ -1,0 +1,22 @@
+/* style.css */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+}
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#seekBar {
+    width: 300px;
+}

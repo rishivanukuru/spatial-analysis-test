@@ -1,4 +1,37 @@
-<html>
-    <head></head>
-    <body>Hello there.</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Room Motion Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="controls">
+        <label for="groupSelector" style="color: white;">Select Group:</label>
+        <select id="groupSelector">
+            <option value="group1">Session 13 - Video</option>
+            <option value="group2">Session 13 - Spatial</option>
+
+            <option value="group3">Session 14 - Video</option>
+            <option value="group4">Session 14 - Spatial</option>
+
+            <option value="group5">Session 3 - Video</option>
+            <option value="group6">Session 3 - Spatial</option>
+
+            <option value="group7">Session 12 - Video</option>
+            <option value="group8">Session 12 - Spatial</option>
+        </select>
+        <button id="playPauseBtn">Play</button>
+        <input type="range" id="seekBar" min="0" value="0">
+        <span id="currentTimeDisplay" style="color: #fff;">00:00:00</span> <!-- New span to display current time -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.154.0/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.154.0/examples/js/loaders/FBXLoader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.154.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <!-- <script src="three.min.js"></script> -->
+    <script type="module" src="script.js"></script>
+</body>
 </html>
